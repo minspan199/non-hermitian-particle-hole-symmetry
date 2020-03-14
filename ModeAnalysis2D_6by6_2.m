@@ -24,7 +24,8 @@ H = sparse([D E * a(1) F F F F; ...
 %% S = [11 14 15 22 21]
 % p = sparse(1,N^2);S = [8 10 11 21 22 28 29 35 ]; H = H + diag(p);D = 0.01*1i*eye(length(S));
 p = sparse(1, N^2);
-S = [1 12 13 24 25 36];
+% S = [1 12 13 24 25 36];
+S=18
 H = H + diag(p);
 D = 0.01 * 1i * eye(length(S));
 %%
