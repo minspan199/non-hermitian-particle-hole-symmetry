@@ -50,8 +50,8 @@ for i = 1:1:36
 
     Lasing = find(imag(diag(V)) > 0);
 
-    if (length(Lasing)==1&&real(lam(Lasing)) < 1e3)
-         real(lam(Lasing))
+    if (length(Lasing) == 1 && real(lam(Lasing)) < 1e3)
+        real(lam(Lasing))
         Mt(i) = 1;
     else
         Mt(i) = 0;
@@ -59,8 +59,6 @@ for i = 1:1:36
 
 end
 
-
-St = [[1,0,0,1,0,1];[0,1,1,1,1,1];[1,1,1,1,1,0];[0,1,1,1,1,1];[1,1,1,1,1,0];[1,1,1,1,1,1]];
+St = [[1, 0, 0, 1, 0, 1]; [0, 1, 1, 1, 1, 1]; [1, 1, 1, 1, 1, 0]; [0, 1, 1, 1, 1, 1]; [1, 1, 1, 1, 1, 0]; [1, 1, 1, 1, 1, 1]];
 figure;
 imagesc(St);
-
