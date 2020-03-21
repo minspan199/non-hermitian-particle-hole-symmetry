@@ -54,17 +54,6 @@ Intensity = abs(A(:, Lasing)) .* abs(A(:, Lasing));
 Intensity = Intensity ./ max(Intensity);
 Phase = angle(A(:, Lasing));
 
-figure;
-bar(Intensity);
-ylim([0 1]);
-set(gcf, 'Position', [00, 00, 400, 300]);
-
-figure;
-bar(Phase);
-ylim([-pi pi]);
-set(gca, 'ytick', [-pi, -pi / 2, 0, pi / 2, pi]);
-set(gca, 'yticklabel', {'-\pi', '-\pi/2', '0', '\pi/2', '\pi'});
-set(gcf, 'Position', [00, 00, 400, 300]);
 
 for k = 1:1:N
 
